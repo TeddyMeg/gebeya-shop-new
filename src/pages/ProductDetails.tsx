@@ -7,7 +7,7 @@ import ColorPicker from '../components/ColorPicker';
 import SizePicker from '../components/SizePicker';
 
 const ProductDetails = () => {
-  const { id } = useParams();
+  // const { id } = useParams();
   const navigate = useNavigate();
   const { addToCart, toggleFavorite } = useShop();
   
