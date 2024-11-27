@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, ShoppingBag, Menu, X, ChevronDown, Globe } from 'lucide-react';
+import { Search, ShoppingBag,ChevronDown, Globe } from 'lucide-react';
 import { useShop } from '../context/ShopContext';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [showCategories, setShowCategories] = useState(false);
+  const [isOpen] = useState(false);
+  // const [showCategories, setShowCategories] = useState(false);
   const { cart } = useShop();
 
   const categories = [
@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold">ㄱ</span>
+              <span className="text-2xl font-bold text-black">ㄱ</span>
             </Link>
           </div>
 
