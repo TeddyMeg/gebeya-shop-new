@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Heart, Minus, Plus, Share2 } from 'lucide-react';
 import { useShop } from '../context/ShopContext';
 import ProductGallery from '../components/ProductGallery';
